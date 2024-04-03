@@ -1,0 +1,155 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+@font-face {
+    font-family: Figtree-Extra-Bold;
+    src: url('/assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    padding: 1rem;
+    font-family: Figtree-Extra-Bold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    font-family: Figtree-Extra-Bold;
+
+    box-shadow: 0.63rem 0.63rem;
+
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: thin;
+    border-color: hsl(0, 0%, 7%);
+    background-color: hsl(0, 0%, 100%);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    min-width: 15rem;
+    max-height: 100svb;
+    padding: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.logo-icon {
+    border-radius: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.blog-tag {
+    border-radius: 0.25rem;
+    background-color: hsl(47, 88%, 63%);
+    padding: 0.32rem 0.63rem 0.32rem 0.63rem; 
+    
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    margin-bottom: 1.3rem;
+}
+.stamp {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 7%);
+    margin-bottom: 1.3rem;
+}
+.blog-header {
+    font-family: 2.5rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    margin-bottom: 1.3rem;
+}
+.blog-header span:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.para{
+    color: hsl(0, 0%, 50%);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.signage {
+    /* font-family: Figtree-Extra-Bold; */
+    color: hsl(0, 0%, 7%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
